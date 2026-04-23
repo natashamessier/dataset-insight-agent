@@ -58,6 +58,9 @@ dataset-insight-agent/
 ├── observability/
 │   ├── __init__.py
 │   └── logger.py                 # JSONL logger and metric computation
+├── utils/
+│   ├── __init__.py
+│   └── export.py                 # PDF export via reportlab (markdown → styled PDF bytes)
 ├── .streamlit/
 │   └── secrets.toml              # Local only — gitignored
 ├── logs/                         # Runtime only — gitignored
