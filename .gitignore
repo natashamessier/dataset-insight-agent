@@ -1,0 +1,32 @@
+# Secrets — never commit real keys
+.env
+.streamlit/secrets.toml
+
+# Runtime-generated logs
+logs/
+
+# Python
+__pycache__/
+*.pyc
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editor
+.vscode/
+.idea/
