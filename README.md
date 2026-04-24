@@ -1,5 +1,7 @@
 # Dataset Insight Agent
 
+**[Live Demo](https://dataset-insight-agent.streamlit.app)**
+
 Dataset Insight Agent is a Streamlit web application that accepts a CSV upload and uses an Anthropic Claude LLM agent to autonomously analyze the data and generate a written report. What makes it agentic — rather than a scripted pipeline — is that the model reads the dataset profile and decides which tools to invoke, in what order, and whether preprocessing is needed before any analysis runs. The same upload can produce very different tool sequences depending on what the model finds: a clean numeric dataset might go straight to correlation and plots; a messy one with currency strings and missing values will trigger a cleaning step first. Reports are produced in three modes selectable by the user: **Executive Summary** (plain-language, decision-maker focused), **Technical Report** (full statistical breakdown with methodology), and **Storytelling Mode** (narrative arc, data journalism style). The tech stack is Anthropic Claude via the raw Python SDK, Streamlit, pandas, matplotlib, and seaborn.
 
 ---
